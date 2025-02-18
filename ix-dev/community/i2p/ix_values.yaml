@@ -1,0 +1,7 @@
+images:
+  i2p:
+    repository: ghcr.io/purplei2p/i2pd
+    tag: release-2.56.0
+
+consts:
+  i2p_container_name: i2p

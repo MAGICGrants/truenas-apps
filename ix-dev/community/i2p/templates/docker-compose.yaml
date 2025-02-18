@@ -1,0 +1,9 @@
+{% set tpl = ix_lib.base.render.Render(values) %}
+
+{% set i2p = tpl.add_container(values.consts.i2p_container_name, values.consts.i2p_container_name) %}
+{% do i2p.clear_caps() %}
+{% do i2p.restart.set_policy("on-failure", 1) %}
+{% do i2p.healthcheck.disable() %}
+{% do i2p.set_network_mode("host") %}
+
+{{ tpl.render() | tojson }}
