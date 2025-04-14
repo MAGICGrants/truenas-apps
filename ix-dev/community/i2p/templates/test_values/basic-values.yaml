@@ -15,6 +15,9 @@ network:
   https_proxy_port:
     bind_mode: "published"
     port_number: 4445
+  sam_bridge_port:
+    bind_mode: "published"
+    port_number: 7656
   additional_ports: []
 
 ix_volumes:

@@ -8,6 +8,7 @@ consts:
   router_console_port_number: 7657
   http_proxy_port_number: 4444
   https_proxy_port_number: 4445
+  sam_bridge_port_number: 7656
 
   run_as_user: 0
   run_as_group: 0
